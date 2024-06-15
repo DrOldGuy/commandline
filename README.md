@@ -56,7 +56,8 @@ public void run(String... args) {
 }
 
 private void printHelp() {
-  new HelpFormatter().print(INSTRUCTIONS, "myjar.jar", options);
+  String content = new HelpFormatter().maxWidth(max).formatHelp("myjar.jar", options);
+  log.info(content);
 }
 
 

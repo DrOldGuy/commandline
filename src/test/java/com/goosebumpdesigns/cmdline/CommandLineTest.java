@@ -8,8 +8,6 @@ import java.util.Arrays;
 import java.util.List;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import com.goosebumpdesigns.cmdline.CmdLine;
-import com.goosebumpdesigns.cmdline.HelpFormatter;
 import com.goosebumpdesigns.cmdline.exception.CmdLineException;
 import com.goosebumpdesigns.cmdline.model.Option;
 import com.goosebumpdesigns.cmdline.model.Options;
@@ -337,7 +335,7 @@ class CommandLineTest {
     // @formatter:on
 
     String content = new HelpFormatter().maxWidth(max).formatHelp("commandline", options);
-    
+
     System.out.println(content);
 
     assertThat(content).contains("--" + CLASS_LONG_OP);

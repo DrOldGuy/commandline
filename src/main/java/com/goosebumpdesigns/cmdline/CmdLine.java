@@ -24,8 +24,8 @@ import lombok.Getter;
  * <p>
  * Both options and parameters have builders.
  * <p>
- * Help can be printed using the {@link #printInstructions(String, String)} convenience method or
- * using {@link FormatPrinter#print(String, String, Options).
+ * Help can be printed using the {@link #printInstructions(String) printInstructions} convenience
+ * method or using {@link HelpFormatter#formatHelp(String, Options)}.
  * <p>
  * A convenience service is provided that creates a new {@link CmdLine} object and calls the
  * {@link CmdLine#parse(String...)} method. This service is eligible for autowiring (injecting) by
