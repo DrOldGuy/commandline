@@ -1,5 +1,5 @@
 // Copyright (c) 2021 Goosebump Designs
-package goosebump.commandline;
+package com.goosebumpdesigns.cmdline;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
